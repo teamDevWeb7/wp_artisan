@@ -24,6 +24,16 @@
     <div id="intro">
         <h1>Friend-Sitter</h1>
     </div>
+    <main>
+        <svg height="600" width="1263">
+            <polygon points="0,0 0,600 1263,400 1263,0"/>
+        </svg>
+
+
+        <div id="forme1">
+
+        </div>
+    </main>
     <div id="test"></div>
 
 
