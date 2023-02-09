@@ -10,12 +10,14 @@
 header{
     height: 15vh;
     position: fixed;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-radius: 25px;
     width: 94%;
     margin-left: 3%;
     margin-top: 5px;
     box-shadow: 3px 3px .4em grey;
+
+    z-index: 99;
 }
 
 header ul{
@@ -69,26 +71,251 @@ header a:hover{
 }
 h1{
     font-style: italic;
-    color: white;
+    color: rgb(255, 255, 255);
     margin-left: 5vw;
     padding-top: 19vh;
     font-size: 3em;
     font-weight: 400;
 }
 
+
+main{
+    position: relative;
+    height: 200vh;
+    background-color: pink;
+}
+
 polygon{
-    background-color: red;
+    position: absolute;
+    /* top: 0;
+    right: 0; */
 }
 
-#forme1{
-    background-color: rgb(255, 217, 0);
-    width: 1px;
-    height: 100px;
-    border: 1px solid rgb(255, 217, 0);
-    border-color: transparent transparent transparent rgb(255, 217, 0);
-    border-width: 100px;
+h2{
+    position: absolute;
+    top: 20vh;
+    left: 5vw;
+    font-size: 2em;
 }
 
-#test{
-    height: 100vh;
+#p1{
+    position: absolute;
+    top: 30vh;
+    left: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50vh;
+    width: 70%;
+}
+
+#p1 p{
+    font-size: 1.3em;
+}
+#p1 a{
+    font-size: 1.3em;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    animation-name: swag;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes swag{
+    from{
+        color: white;
+    }20%{
+        color: red;
+    }40%{
+        color: blue;
+    }60%{
+        color: violet;
+    }80%{
+        color: green;
+    }to{
+        color: white;
+    }
+}
+
+#g7{
+    position: absolute;
+    top: 45vh;
+    right: 5vw;
+    border-radius: 50%;
+    width: 27%;
+    opacity: 1;
+    animation-name: ghost;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes ghost{
+    from{
+        opacity: 1;
+    }50%{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+
+
+
+
+h3{
+    position: absolute;
+    top: 100vh;
+    right: 38vw;
+    font-size: 2em;
+}
+
+#ateliers img{
+    width: 250px;
+}
+
+#ateliers{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 25vh;
+}
+#ateliers div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#ateliers a{
+    color: black;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+#ateliers a:hover{
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+
+
+
+h4{
+    position: absolute;
+    top: 180vh;
+    font-size: 2em;
+    animation-name: promenade;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(5, end);
+
+}
+
+@keyframes promenade{
+    from{
+        margin-left: 3%;
+    }50%{
+        margin-left: 85%;
+    }to{
+        margin-left: 3%;
+    }
+}
+
+
+#contact{
+    position: absolute;
+    top: 195vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 40vh;
+    /* border: solid black 1px; */
+}
+
+#contact a{
+    color: black;
+    text-decoration: none;
+    animation-name: gros;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes gros{
+    from{
+        font-size: 1em;
+    }50%{
+        font-size: 1.4em;
+        color: red;
+    }to{
+        font-size: 1em;
+    }
+}
+
+#contact img{
+    width: 18%;
+}
+
+#contact div{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+
+footer{
+    margin-top: 40vh;
+    height: 40vh;
+
+}
+
+footer img{
+    width: 50%;
+}
+
+#navouille ul{
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+footer li{
+    list-style: none;
+}
+
+footer>#navouille>ul>li>a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+footer #navouille a:hover{
+    font-weight: 600;
+}
+
+
+#reseaux{
+    height: 20vh;
+    display: flex;
+    align-items: center;
+}
+
+#reseaux img:hover{
+    scale: 1.2;
+}
+
+#reseaux a{
+    display: flex;
+    justify-content: center;
+}
+
+footer p{
+
+    width: 24%;
+    margin-left: 38%;
 }
