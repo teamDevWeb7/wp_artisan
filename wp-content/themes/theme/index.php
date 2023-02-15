@@ -12,7 +12,7 @@ get_header();
         ?>
         <article id="artBlog">
             <div id="tf">
-                <?php the_post_thumbnail();?>
+                <?php the_post_thumbnail('wp_taille1');?>
             </div>
             
             <div id="salut">
